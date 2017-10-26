@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "directory.h"
 #include <iostream>
 #include <fstream>
@@ -17,15 +17,15 @@ struct contact {
 	void outputConsole();
 };
 
-/*преобразует строку из словаря в структуру contact, 
-принимает string
-возвращает *contact */
+/*РїСЂРµРѕР±СЂР°Р·СѓРµС‚ СЃС‚СЂРѕРєСѓ РёР· СЃР»РѕРІР°СЂСЏ РІ СЃС‚СЂСѓРєС‚СѓСЂСѓ contact, 
+РїСЂРёРЅРёРјР°РµС‚ string
+РІРѕР·РІСЂР°С‰Р°РµС‚ *contact */
 contact*  directoryLineToContact(string &str);
 
-/*функция считывает данные с консоли, которые преобразует в contact
-возвращает *contact */
+/*С„СѓРЅРєС†РёСЏ СЃС‡РёС‚С‹РІР°РµС‚ РґР°РЅРЅС‹Рµ СЃ РєРѕРЅСЃРѕР»Рё, РєРѕС‚РѕСЂС‹Рµ РїСЂРµРѕР±СЂР°Р·СѓРµС‚ РІ contact
+РІРѕР·РІСЂР°С‰Р°РµС‚ *contact */
 contact* contactFromConsole();
 
-/*считывает строки из словаря в вектор
-возвращает vector<contact* >* */
+/*СЃС‡РёС‚С‹РІР°РµС‚ СЃС‚СЂРѕРєРё РёР· СЃР»РѕРІР°СЂСЏ РІ РІРµРєС‚РѕСЂ
+РІРѕР·РІСЂР°С‰Р°РµС‚ vector<contact* >* */
 vector<contact*>* readDirectory();
